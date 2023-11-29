@@ -1,5 +1,6 @@
+import styled from "styled-components";
 import "./App.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 function App() {
   useEffect(() => {
@@ -8,7 +9,15 @@ function App() {
     });
   }, []);
 
-  return <div className="App"></div>;
+  const handleComplete = (data) => {
+    console.log(data);
+  };
+
+  return (
+    <>
+      <div className="App" style={{ width: "300px" }}></div>{" "}
+    </>
+  );
 }
 
 export default App;
